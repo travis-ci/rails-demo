@@ -15,6 +15,7 @@ deploy:
   api_key: $HEROKU_AUTH_TOKEN
 
 before_install:
+  - gem install rubygems-update -v 3.4.22
   - gem update --system
   - gem install bundler
 
